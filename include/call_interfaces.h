@@ -196,6 +196,7 @@ struct sdp_ng_flags {
 		     reuse_codec:1,
 		     static_codecs:1,
 		     allow_transcoding:1,
+		     force_transcoding:1,
 		     allow_asymmetric_codecs:1,
 		     early_media:1,
 		     accept_any:1,

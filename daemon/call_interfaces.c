@@ -1010,6 +1010,10 @@ void call_ng_flags_flags(sdp_ng_flags *out, str *s, helper_arg dummy) {
 		case CSH_LOOKUP("allow-transcoding"):
 			out->allow_transcoding = 1;
 			break;
+		case CSH_LOOKUP("force-transcoding"):
+        case CSH_LOOKUP("force transcoding"):
+			out->force_transcoding = true;
+			break;
 		case CSH_LOOKUP("always-transcode"):;
 			static const str str_all = STR_CONST_INIT("all");
 			call_ng_flags_esc_str_list(out, (str *) &str_all, &out->codec_accept);
